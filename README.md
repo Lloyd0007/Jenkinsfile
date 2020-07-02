@@ -1,4 +1,5 @@
 # Jenkinsfile
+
 pipeline {
 
 agent any
@@ -23,6 +24,6 @@ stages {
         steps {
             echo 'Deploying the application....'
         }
-    }
-}
+     }
+  }
 }
