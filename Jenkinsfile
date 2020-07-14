@@ -5,7 +5,7 @@ pipeline {
       steps {
         echo 'Building the application...'
         sh 'make'
-        archiveArtifacts 'artifacts: **/target/*.jar'
+        archiveArtifacts 'target/**/*.jar'
       }
     }
 
