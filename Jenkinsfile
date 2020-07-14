@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building the application...'
+        echo 'mvn build'
         sh 'make'
       }
     }
@@ -22,5 +23,8 @@ pipeline {
       }
     }
 
+  }
+  tools {
+    maven 'Maven'
   }
 }
