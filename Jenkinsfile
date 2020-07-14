@@ -2,13 +2,8 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-      options {
-        skipDefaultCheckout()
-      }
       steps {
         echo 'Building the application...'
-        echo "PATH = ${PATH}"
-        echo "M2_HOME = ${M2_HOME}"
       }
     }
 
@@ -48,8 +43,5 @@ pipeline {
       }
     }
 
-  }
-  tools {
-    maven 'Maven'
   }
 }
