@@ -4,7 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building the application...'
-        echo 'mvn build'
+        echo "PATH = ${PATH}"
+        echo "M2_HOME = ${M2_HOME}"
         sh 'make'
       }
     }
