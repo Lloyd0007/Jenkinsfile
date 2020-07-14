@@ -26,7 +26,7 @@ pipeline {
           }
         }
 
-        stage('QA Test') {
+        stage('Performance Test') {
           steps {
             echo 'Carryout the q.a test '
           }
