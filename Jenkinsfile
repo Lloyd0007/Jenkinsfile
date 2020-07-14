@@ -4,8 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building the application...'
-        sh 'make'
-        archiveArtifacts '**/target/*.jar'
       }
     }
 
