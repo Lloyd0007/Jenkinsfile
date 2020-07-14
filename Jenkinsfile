@@ -23,6 +23,10 @@ pipeline {
         stage('Integration Test') {
           steps {
             echo 'start integration test '
+            timeout(time: 90) {
+              echo 'start performance testing after timeout'
+            }
+
           }
         }
 
