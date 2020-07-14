@@ -15,7 +15,6 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing the application...'
-        sh 'make check'
         junit 'report//**/target/*.xml'
       }
     }
