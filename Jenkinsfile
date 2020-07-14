@@ -2,6 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Build') {
+      options {
+        skipDefaultCheckout()
+      }
       steps {
         echo 'Building the application...'
         echo "PATH = ${PATH}"
