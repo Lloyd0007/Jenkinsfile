@@ -11,6 +11,7 @@ pipeline {
       steps {
         echo 'Testing the application...'
         junit 'target/**/*.xml'
+        sh 'jenkins/test-all.sh'
       }
     }
 
