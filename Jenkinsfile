@@ -13,8 +13,19 @@ pipeline {
     }
 
     stage('Test') {
-      steps {
-        echo 'Testing the application...'
+      parallel {
+        stage('Test') {
+          steps {
+            echo 'Testing the application...'
+          }
+        }
+
+        stage('Integration Test') {
+          steps {
+            echo 'start integration test '
+          }
+        }
+
       }
     }
 
