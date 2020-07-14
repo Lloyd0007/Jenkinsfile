@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building the application...'
-        sh 'jenkins/build.sh'
+        sh 'make'
       }
     }
 
