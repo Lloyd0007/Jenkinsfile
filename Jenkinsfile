@@ -10,7 +10,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing the application...'
-        sh 'jenkins/test-all.sh'
+        sh 'make  check'
         junit 'report//**/target/*.xml'
       }
     }
