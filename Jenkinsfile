@@ -26,6 +26,12 @@ pipeline {
           }
         }
 
+        stage('QA Test') {
+          steps {
+            echo 'Carryout the q.a test '
+          }
+        }
+
       }
     }
 
