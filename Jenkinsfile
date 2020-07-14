@@ -9,7 +9,6 @@ pipeline {
         echo 'Building the application...'
         echo "PATH = ${PATH}"
         echo "M2_HOME = ${M2_HOME}"
-        sh 'jenkins/build.sh'
       }
     }
 
