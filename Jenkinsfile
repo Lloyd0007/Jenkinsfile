@@ -40,6 +40,7 @@ pipeline {
       }
       steps {
         echo 'Deploying the application....'
+        input(message: 'Deploy?', ok: 'Yes')
       }
     }
 
