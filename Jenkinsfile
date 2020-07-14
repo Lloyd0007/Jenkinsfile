@@ -15,7 +15,6 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing the application...'
-        junit 'report//**/target/*.xml'
       }
     }
 
