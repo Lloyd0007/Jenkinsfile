@@ -4,8 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building the application...'
-        sh 'make'
-        archiveArtifacts 'target/**/*.jar'
       }
     }
 
@@ -21,8 +19,5 @@ pipeline {
       }
     }
 
-  }
-  environment {
-    maven = 'Maven 3.6.3'
   }
 }
